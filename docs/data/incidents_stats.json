@@ -1,0 +1,59 @@
+{
+  "incident_counts": {
+    "UNIVERSITY_CITY": 4293,
+    "POINT_BREEZE": 2023,
+    "Center City": 1527,
+    "KENSINGTON": 737
+  },
+  "incident_types": {
+    "Center City": {
+      "Thefts": 636,
+      "Other Assaults": 265,
+      "All Other Offenses": 196,
+      "Vandalism/Criminal Mischief": 87,
+      "Fraud": 64,
+      "Theft from Vehicle": 48,
+      "Aggravated Assault No Firearm": 42,
+      "Robbery No Firearm": 41,
+      "Motor Vehicle Theft": 41,
+      "Burglary Non-Residential": 29
+    },
+    "KENSINGTON": {
+      "Motor Vehicle Theft": 149,
+      "Theft from Vehicle": 114,
+      "Thefts": 113,
+      "Other Assaults": 78,
+      "Fraud": 75,
+      "Vandalism/Criminal Mischief": 67,
+      "All Other Offenses": 45,
+      "Aggravated Assault No Firearm": 17,
+      "Burglary Residential": 16,
+      "Burglary Non-Residential": 14
+    },
+    "POINT_BREEZE": {
+      "Thefts": 593,
+      "All Other Offenses": 405,
+      "Other Assaults": 245,
+      "Theft from Vehicle": 159,
+      "Motor Vehicle Theft": 149,
+      "Vandalism/Criminal Mischief": 138,
+      "Fraud": 111,
+      "Aggravated Assault No Firearm": 45,
+      "Burglary Residential": 41,
+      "Offenses Against Family and Children": 25
+    },
+    "UNIVERSITY_CITY": {
+      "All Other Offenses": 1372,
+      "Narcotic / Drug Law Violations": 558,
+      "Other Assaults": 509,
+      "Thefts": 348,
+      "Vandalism/Criminal Mischief": 236,
+      "Fraud": 195,
+      "Aggravated Assault No Firearm": 194,
+      "Motor Vehicle Theft": 165,
+      "Weapon Violations": 104,
+      "Theft from Vehicle": 101
+    }
+  },
+  "generated_at": "2026-03-19T00:29:25.087167"
+}

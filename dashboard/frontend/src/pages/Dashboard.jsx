@@ -3,7 +3,7 @@ import Map from '../components/Map';
 import StatsPanel from '../components/StatsPanel';
 import ComparisonChart from '../components/ComparisonChart';
 import NeighborhoodSelector from '../components/NeighborhoodSelector';
-import { apiService } from '../utils/api';
+import { staticDataService } from '../utils/staticDataService';
 import '../styles/Dashboard.css';
 
 const Dashboard = () => {
@@ -19,14 +19,16 @@ const Dashboard = () => {
   useEffect(() => {
     const loadNeighborhoods = async () => {
       try {
-        const response = await apiService.getNeighborhoods();
-        if (response.data.status === 'success') {
-          // API 返回的是 stats 对象数组，每个对象有 'neighborhood' 属性
-          const names = response.data.data.map((item) => item.neighborhood || item.name);
+        const response = await staticDataService.getNeighborhoods();
+        if (response.status === 'success') {
+          // 返回的是 stats 对象数组，每个对象有 'neighborhood' 属性
+          const names = response.data.map((item) => item.neighborhood || item.name);
           setNeighborhoods(names);
           if (names.length > 0) {
             setSelectedNeighborhood(names[0]);
           }
+        } else {
+          setError('Failed to load neighborhoods');
         }
       } catch (err) {
         setError('Failed to load neighborhoods');
@@ -44,16 +46,16 @@ const Dashboard = () => {
       setLoading(true);
       try {
         const [dataRes, statsRes] = await Promise.all([
-          apiService.getNeighborhoodData(selectedNeighborhood),
-          apiService.getStats(selectedNeighborhood),
+          staticDataService.getNeighborhoodData(selectedNeighborhood),
+          staticDataService.getStats(selectedNeighborhood),
         ]);
 
-        if (dataRes.data.status === 'success') {
-          setData(dataRes.data.data);
+        if (dataRes.status === 'success') {
+          setData(dataRes.data);
         }
 
-        if (statsRes.data.status === 'success') {
-          setStats(statsRes.data.data);
+        if (statsRes.status === 'success') {
+          setStats(statsRes.data);
         }
       } catch (err) {
         setError('Failed to load data');
@@ -70,9 +72,9 @@ const Dashboard = () => {
   useEffect(() => {
     const loadComparison = async () => {
       try {
-        const response = await apiService.getComparison();
-        if (response.data.status === 'success') {
-          setComparisonData(response.data.data);
+        const response = await staticDataService.getComparison();
+        if (response.status === 'success') {
+          setComparisonData(response.data);
         }
       } catch (err) {
         console.error('Failed to load comparison data', err);
