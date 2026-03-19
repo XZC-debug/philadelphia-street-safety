@@ -1,0 +1,61 @@
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+*.tmp
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+env/
+*.egg-info/
+dist/
+build/
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+.npm
+
+# Data (keep geojson, but ignore large raw files)
+0度/
+*.csv
+yolov8m.pt
+yolov3*.weights
+*.pth
+
+# Temporary files
+~$*
+*.docx~
+.claude/
+
+# Build outputs
+result/
+processed_data/
+
+# Keep these important directories but ignore contents
+philly_streetscape_project/.gitkeep
+incidents/.gitkeep
+
+# Large shapefiles - optional (can uncomment if you want to share them)
+# *.shp
+# *.shx
+# *.dbf
+# *.prj

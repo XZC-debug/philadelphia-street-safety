@@ -1,0 +1,7 @@
+Flask>=2.3.0
+Flask-CORS>=4.0.0
+geopandas>=0.14.0
+pandas>=2.1.0
+shapely>=2.0.0
+numpy>=1.26.0
+python-dotenv>=1.0.0

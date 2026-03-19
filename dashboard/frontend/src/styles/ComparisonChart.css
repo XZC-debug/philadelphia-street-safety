@@ -1,0 +1,38 @@
+.comparison-chart {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.comparison-chart h3 {
+  margin: 0 0 20px 0;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+
+.comparison-chart p {
+  margin: 0;
+  color: #999;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.chart-note {
+  font-size: 11px !important;
+  color: #666 !important;
+  font-style: italic;
+  margin-top: 15px !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .comparison-chart {
+    padding: 15px;
+  }
+
+  .comparison-chart h3 {
+    font-size: 14px;
+  }
+}
