@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/philadelphia-street-safety/static/css/main.d5fd5455.css",
+    "main.js": "/philadelphia-street-safety/static/js/main.fdd76864.js",
+    "index.html": "/philadelphia-street-safety/index.html",
+    "main.d5fd5455.css.map": "/philadelphia-street-safety/static/css/main.d5fd5455.css.map",
+    "main.fdd76864.js.map": "/philadelphia-street-safety/static/js/main.fdd76864.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d5fd5455.css",
+    "static/js/main.fdd76864.js"
+  ]
+}
